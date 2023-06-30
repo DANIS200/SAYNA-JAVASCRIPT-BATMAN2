@@ -1,0 +1,578 @@
+::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+html{
+    --res: calc(0.015*12vmin);
+}
+:root{
+    --gradient-white:#eddebfad;
+    --gradient-red:#d30d1abd;
+    --black-color:#000;
+    --gradient-wheat:#eddebf33;
+    --gradient-blue:#19587d46; 
+    --gradient-wello:rgba(228, 122, 1, 0.6);
+}
+body{
+    background-color:#000000;
+    margin: auto;
+    color: white;
+}
+
+.page1{
+    background-image: url(../Assets/Illustrations/Bathome1.png);
+    background-size: cover;
+    height: 785px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+ .page1 .container {
+    max-width: 85.3%;
+    margin: 0 auto; 
+}
+main{
+    border: 2px solid #c4c4c4 ;
+    border-bottom: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 40px 150px;
+    border: 2px solid #c4c4c4;
+    border-top: none;
+}
+nav ul  a{
+    color: #fff;
+    font-family: rajdhani;
+    font-weight: 700;
+    font-size: 20px;
+}
+nav  a:hover{
+    color: #ffff00;
+}
+.INTRO{
+    -webkit-animation: fadeInRight 1500ms ease-in-out;
+    animation: fadeInRight 1500ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+.btn{
+    font-family: rajdhani;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding: 18px 22px;
+    text-decoration: none;
+    color: #ffff;
+   
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+   /* box-shadow: var(--black-color) 5px 5px 40px;*/
+
+}
+.bouton{
+    margin-top: 30px;
+}
+.flèche{
+    padding-top: 260px;
+}
+.reseaux_sociaux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 75px;
+    bottom: 40px;
+
+}
+.reseaux_sociaux a{
+    margin-top: 15px;
+} 
+
+
+/* validatio mail et check box*/
+.popupbox{
+    display: none;
+    background:#eddebf;
+    border-radius: 10px;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    top: 150px;
+    left: 430px;
+}
+.inside{
+    padding: 10px ;
+    margin:10px;
+    background: #c4c4c4;
+    border-radius: 20px;
+}
+
+
+    /* batman au cinéma */
+
+#batman_au_cinéma{
+             margin: -35px auto;
+             max-width: 85%;
+             border-left: 2px solid #c4c4c4;
+             border-right: 2px  solid #c4c4c4;
+}
+#batman_au_cinéma .titre{
+             font-family: rajdhani;
+             font-weight: 500;
+            /* font-size: 36px;*/
+             font-size: clamp(18px , 3vw ,36px);
+             text-transform: uppercase;
+             padding: 150px 0px 0px 60px;
+}
+#batman_au_cinéma .description{
+              font-family: Space Grotesk;
+              font-weight: 400;
+              /*font-size: 18px;*/
+              font-size: clamp(12px ,2vw ,18px);
+              text-align: justify;
+              padding: 10px 65px 0px 60px;
+}
+.batman_personnage{
+             /*display: flex;
+             justify-content: space-between*/
+             margin-left: -70px;
+             display: grid;
+             justify-content: center;
+             grid-template-columns: repeat(auto-fit,250px);
+             grid-gap :60px;
+}
+.batman_personnage img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.batman_item figcaption {
+    text-align: center;
+}
+
+   /* némésis */
+
+#némésis{
+    margin: 0 auto;
+    max-width:85%;
+    border-left: 2px solid #c4c4c4;
+    border-right: 2px solid #c4c4c4;
+}
+.némésis-icon{
+    display:flex;
+    margin-left: 10px;
+    padding-top: 60px;
+}
+.némésis-icon .titre{
+            font-family: rajdhani;
+             font-weight: 500;
+            /*font-size: 36px;*/
+            font-size: clamp(18px , 3vw ,36px);
+             text-transform: uppercase;
+             padding: 50px 0px 0px 125px;
+
+}
+.némésis-icon img{
+    position: relative;
+    right: 90px;
+    width: 150px;
+    height: 120px;
+}
+#némésis .description{
+              font-family: Space Grotesk;
+              font-weight: 400;
+             /* font-size: 18px;*/
+             font-size: clamp(12px ,2vw ,18px);
+              text-align: justify;
+              padding-right: 140px;
+              padding-left: 135px;
+}
+.némésis-personnage{
+             margin-left: -70px;
+             display: grid;
+             justify-content: center;
+             grid-template-columns: repeat(auto-fit,250px);
+             grid-gap :60px;
+}
+.némésis-personnage img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+  #némésis .Bathome12 img {
+    position: relative;
+    left: 74%;
+    top: -70px;
+    width: 385px;
+
+}
+.némésis_item figcaption{
+    text-align: center;
+}
+
+   /* allies*/
+
+#allies{
+             margin: 0 auto;
+             max-width: 85%;
+             margin-top: -275px;
+             border-left: 2px solid #c4c4c4;
+             border-right: 2px solid #c4c4c4;
+}
+#allies .titre{
+             font-family: rajdhani;
+             font-weight: 500;
+            /* font-size: 36px;*/
+            font-size: clamp(18px , 3vw ,36px);
+             text-transform: uppercase;
+             padding: 100px 0px 0px 60px;
+}
+#allies .description{
+              font-family: Space Grotesk;
+              font-weight: 400;
+              /*font-size: 18px;*/
+              font-size: clamp(12px ,2vw ,18px);
+              text-align: justify;
+              padding-left: 60px;
+              padding-right: 50px;
+}
+.allies_personnage{
+    margin-left: -70px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,250px);
+    grid-gap :60px;
+}
+.allies_personnage img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.allies-item figcaption {
+    text-align: center;
+}
+
+          /*justice_league*/
+
+#justice_league .titre{
+    font-family: rajdhani;
+    font-weight: 500;
+   /* font-size: 36px;*/
+   font-size: clamp(18px , 3vw ,36px);
+    text-transform: uppercase;
+    padding-top: 90px;
+    padding-left: 125px;
+    margin-top: -20px;
+    border-left: 2px solid #c4c4c4;
+    border-right: 2px solid #c4c4c4;
+
+}
+#justice_league .description{
+     font-family: Space Grotesk;
+     font-weight: 400;
+     /*font-size: 18px;*/
+     font-size: clamp(12px ,2vw ,18px);
+     text-align: justify;
+     margin-top: -30px;
+     padding-top: 30px;
+     padding-left: 125px;
+     padding-right: 160px;
+     padding-bottom: 60px;
+     border-left: 2px  solid #c4c4c4;
+     border-right: 2px solid #c4c4c4;
+}
+#justice_league img{
+    margin-left: -110px;
+    margin-top: -30px;
+}
+#justice_league img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* partier multimédia*/
+
+#multimédia{
+    max-width: 85%;
+    margin: -120px auto -2px auto;
+    border-left: 2px solid #c4c4c4;
+    border-right: 2px  solid #c4c4c4;
+}
+#multimédia h1{
+            font-family: rajdhani;
+             font-weight: 500;
+             font-size: 36px;
+             padding-top: 120px;
+}
+
+#multimédia button {
+    position: relative;
+    top: 165px;
+    background: none;
+    border: none;
+}
+#multimédia button.right{
+    right: -89%;
+}
+ 
+#multimédia .slider-multimédia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+    max-width: 530px;
+    border-radius: 10px;
+}
+#multimédia .slider-image {
+    width: 100%;
+}
+#multimédia .slider-content{
+    padding: 15px;
+    font-size: 10.5px;
+    height: 200px;
+    line-height: 1.3;
+    background: linear-gradient(
+        80deg,var(--gradient-wheat),var(--gradient-blue)
+    );
+    border-top-right-radius:20px;
+    border-bottom-right-radius: 20px;
+}
+#multimédia .bande-annonce{
+ width: 950px;
+ position: relative;
+ padding-top: 60px;
+ padding-bottom: 100px;
+}
+
+/*  contact */
+
+#contact{
+    background: linear-gradient(
+        80deg,var(--gradient-wheat),var(--gradient-blue)
+    );
+    box-shadow: var(--black-color) 5px 5px 40px;
+   padding: 40px 0;
+}
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 60px;
+}
+#contact .titre{
+    display: block;
+    margin: 28px 0;
+}
+#contact .cochant ,#contact .choisissez{
+    color: #c4c4c4;
+}
+#contact .form input[type="email"],textarea {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid #BCBBBD;
+    background-color: transparent;
+    padding: 10px 0;
+}
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid wheat;
+    color: #c4c4c4;
+    width: 80%;
+}
+#contact .icon img{
+   transform:rotate(90deg);
+   width: 20px;
+}
+::placeholder{
+    color: #c4c4c4;
+    font-size: 15px;
+}
+.btn-group{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.form input[type="radio"]{
+    opacity: 0;
+}
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+    -o-border-image:linear-gradient(
+        80deg,var(--gradient-wheat),var(--gradient-blue)
+    )1;
+    border-image:linear-gradient(
+        80deg,var(--gradient-wheat),var(--gradient-blue)
+    )1;
+    font-size: 18px;
+}
+input[type="submit"]{
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 0;
+    cursor: pointer;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    opacity: 1;
+    
+}
+#citations{
+    margin: 80px 190px;
+}
+#citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#citations .citation-texte{
+    width: 450px;
+    margin: 0 auto;
+}
+#citations .citation-auteur{
+    font-family: rajdhani;
+    font-size: 12px;
+    padding-top: 30px;
+    width: 240px;
+    line-height: 1.9;
+    margin: 0 auto;
+}
+#citations .guillement-close{
+    float: right;
+}
+footer{
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+footer .texte-footer{
+    text-align: center;
+    font-size: 11px;
+}
+footer .social-footer{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: -38%;
+    padding-top: 20px;
+     
+}
+footer .social-item{
+    padding: 20px
+}
+.fin-page-border{
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 40px 0;
+    border-left: 2px solid #c4c4c4;
+    border-right: 2px solid #c4c4c4;
+}
+.loader-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:opacity 1s ease-in-out;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(
+        80deg, var(--gradient-blue),var(--gradient-white)
+    );
+    margin: 30px 3px 0 0;
+    animation: loader infinite 0.3s alternate;
+}
+/*@keyframes loader {
+    100%{
+        transform: translateY(-10px); 
+    }
+}*/
+
+
+@media(max-width:1200px){
+    .INTRO{
+        padding-top: 120px;
+    }
+    .reseaux_sociaux {
+        right: 30px;
+        bottom: 5px;
+
+    }
+    }
+    .page1{
+        background-size: 100cqmax;
+        height: 62cqmax;
+    }
+    #justice_league img{
+        width: 112cqmax;
+    }
+    #multimédia .bande-annonce{
+        width: 70cqmax;
+    }
+    #contact{
+        width: 112cqmax;
+    }
+    #multimédia .slider-multimédia{
+        width: 90cqmax;
+        }
+
+@media(max-width:900px){
+    nav{
+        padding: 20px 60px;
+    }
+    .INTRO{
+        padding-top: 90px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    #batman_au_cinéma .description,
+    #némésis .description,
+    #allies .description {
+        margin: 0 ;
+        padding: 0  10px;
+    }
+    #justice_league .description{
+       padding: 30px 10px;
+    }
+    #contact{
+        font-size: 12px;
+    }
+    #multimédia .slider-content{
+        line-height: 1.1;
+    }
+    #multimédia button.left{
+        left: -50px;
+    }
+    #citations{
+        margin: 20px 10px;
+    }
+    #citations .citation-texte{
+        width: 300px;
+        font-size: 14px;
+    }
+    }
+
+    .container-video-bande-anonce{
+        background: #fff;
+    }
+    .container-video-bande-anonce .films{
+        width: 800px ;
+        margin: 30px 250px;
+    }

@@ -1,0 +1,327 @@
+::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+html{
+    --res: calc(0.015*12vmin);
+}
+:root{
+    --gradient-white:#eddebfad;
+    --gradient-red:#d30d1abd;
+    --black-color:#000;
+    --gradient-wheat:#eddebf33;
+    --gradient-blue:#19587d46; 
+    --gradient-wello:rgba(228, 122, 1, 0.6);
+}
+body{
+   background-color:#000000;
+    margin: auto;
+    color: white;
+}
+
+.page{
+    background-image: url(../Assets/Illustrations_game/Batgame_1.png);
+    background-size: cover;
+    height: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+ .page .container {
+    max-width: 85.3%;
+    margin: 0 auto; 
+}
+main{
+    border: 2px solid #c4c4c478 ;
+    border-bottom: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 40px 150px;
+    border: 2px solid #c4c4c478;
+    border-top: none;
+}
+nav ul  a{
+    text-decoration: none;
+    color: #fff;
+    font-family: rajdhani;
+    font-weight: 700;
+    font-size: 20px;
+}
+nav  a:hover{
+    color: #ffff00;
+    text-decoration: underline;
+}
+.let_game{
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+   text-align: center;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+.let_game h2{
+    position: relative;
+    left: -30%;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.flèche{
+    padding-top: 260px;
+}
+.reseaux_sociaux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    bottom: 40px;
+
+}
+.reseaux_sociaux a{
+    margin-top: 15px;
+} 
+
+
+
+/*  section chevalier */
+#chevalier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#chevalier h2{
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+#chevalier img{
+    width: 800px;
+    padding: 20px 0 50px 0;
+}
+#chevalier button{
+    padding: 20px ;
+    margin-bottom: 50px;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-wello)
+    );
+}
+#chevalier button a{
+   text-decoration: none;
+   font-size: 18px;
+}
+
+ 
+
+/*  mise en page de question quiz*/
+form span{
+font-size: 25px;
+padding-top: 50px;
+padding-bottom: 30px;
+display: flex;
+justify-content: center;
+border-top: 5px solid #c4c4c478;
+}
+form .suivant{
+    margin: 50px auto 100px auto;
+    width: 200px;
+    padding: 15px 20px 15px 35px;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-wello)
+    );
+    box-shadow: 0 2px 10px rgba(182, 164, 164, 0.574);
+    border-radius: 5px;
+    cursor: pointer;
+}
+form .suivant a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.Batgame_9-1{
+    position: relative;
+    left: 75%;
+    top: 10px;
+}
+.suivantBatgame_9{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -110px;
+    margin-bottom: -250px;
+}
+.suivantBatgame_9 .suivant{
+    margin-top: -40px;
+}
+.Batgame_9{
+    position: relative;
+    left: 300px;
+}
+.suivantBatgame_13_1_13{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.suivantBatgame_16{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+/*resulta*/
+.container-global{
+    margin: 0 auto;
+    height: auto;
+   /* background: pink;*/
+}
+.question-block{
+    background: #3333335a;
+    padding: 15px 25px 25px ;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(182, 164, 164, 0.574);
+}
+
+.question-block h4{
+    padding: 10px 0;
+    font-size: 17px;
+}
+.question-block label{
+    font-size: 18px;
+    background-color: #c4c4c43a;
+    margin: 10 auto;
+    padding: 0 50px 0 10px;
+}
+
+.container-global input[type='radio']{
+    transform: scale (1.8);
+    margin: 10px;
+    cursor: pointer;
+}
+.resultats{
+    width: 70%;
+    padding: 25px;
+    margin: 15px auto 80px auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(182, 164, 164, 0.574);
+   /* background: #333;*/
+   background:rgba(228, 122, 1, 0.226);
+    border: 5px solid #ffffff0a;
+}
+.resultats h2{
+    text-align: center;
+}
+.aide{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.note{
+   text-align: center; 
+   font-size: 25px;
+   margin: 10px auto;
+   background: linear-gradient(
+    80deg,var(--gradient-white),var(--gradient-wello)
+);
+   border-radius: 5px;
+   cursor: pointer;
+   width:300px;
+}
+.note a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+form button{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-wello)
+    );
+    box-shadow: 0 2px 10px rgba(182, 164, 164, 0.574);
+    display: block;
+    margin:20px auto ;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.2 ease-in-out;
+    
+}
+
+form button:hover{
+    background-color: lightblue;
+}
+.echec{
+    animation: echec 0.3s ease-in-out;
+}
+@keyframes echec{
+    0%{
+        transform: translateX(0px);
+    }
+    33%{
+        transform: translateX(5px);
+    }
+    66%{
+        transform: translateX(-5px);
+    }
+    00%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+/* footer*/
+
+footer{
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+footer .texte-footer{
+    text-align: center;
+    font-size: 11px;
+}
+footer .social-footer{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: -38%;
+    padding-top: 20px;
+     
+}
+footer .social-item{
+    padding: 20px
+}
+.fin-page-border{
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 40px 0;
+    border-left: 2px solid #c4c4c4;
+    border-right: 2px solid #c4c4c4;
+}
+
+
+
+
+.bloc{
+    display: none
+}
+

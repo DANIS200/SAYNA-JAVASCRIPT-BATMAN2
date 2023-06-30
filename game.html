@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game - API Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "./Assets/css/game.css">
+</head>
+<body class = "flex">
+
+
+    <div class="page">
+        <div class="container">
+        <header>
+            <nav class="container">
+                <div class="logohome">
+                       <a href="index.html"><img src="Assets/Assets/Logos/logohome.png" alt="logohome" width="105px" height="auto"></a>
+                </div>
+                <div class="home">
+                    <ul>
+                       <a href="index.html">HOME</a>
+                       <a href="game.html">GAME</a>
+                    </ul>
+                </div>  
+            </nav>
+        </header>
+        <main>
+    
+            <div class="reseaux_sociaux">
+                    <a href="" target="_blank"><img src="Assets/Assets/Logos/logo_bat_flèche.png" alt="icon_flèche_1" width="90px"></a>
+                    <a href="" target="_blank"><img src="Assets/Assets/Logos/icon_facebook.png" alt="icon_facebook"></a>
+                    <a href="" target="_blank"><img src="Assets/Assets/Logos/icon_ig.png" alt="icon-instagram"></a>
+                    <a href="" target="_blank"><img src="Assets/Assets/Logos/icon_tw.png" alt="icon_twiter"></a>
+                    <a href="" target="_blank"><img src="Assets/Assets/Logos/logo_bat_flèche_2.png" alt="icon_flèche_2" width="90px"></a>
+           </div>
+           <section id="hero_game"> 
+                      <div class="let_game">
+                         <h2 class="titre">LET’s play a <br> little game...</h2>
+                       <a class="flèche" href=""><img src="Assets/Assets/Logos/flèche_down_header.png" alt="fléche down header"></a>
+                     </div>
+            </section>
+    
+            <section id="chevalier">
+                <h2>connaissez vous bien le chevalier noir ?</h2>
+                <img src="./Assets/Assets/Illustrations_game/Batgame_2.png" alt="Batgame_2">
+                <button> <a href="#question1">DÉMARRER LE QUIZ</a></button>
+            </section>
+
+
+            <div class="container-global">
+
+                <form class="form-quizz" action="">
+        
+                      
+                    <div id="question1">
+                        <span class="numero_question"> 1/15</span>
+            
+                    <div class="question">
+                        <div class="Batgame_3">
+                            <img src="./Assets/Assets/Illustrations_game/Batgame_3.png" alt="">
+                        </div>
+                        <div class="question-block">
+                            
+                            <h4>Quel est l’autre nom de l’Homme-Mystère ?</h4>
+                    
+                            <div>
+                                <input type="radio" id="LeSphinx" name="q1" value="a" checked>
+                                <label for="LeSphinx">Le Sphinx</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Saphir" name="q1" value="a" >
+                                <label for="Saphir">Saphir</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="LeJoker" name="q1" value="a">
+                                <label for="LeJoker">Le Joker</label>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                       
+                 <div id="question2">
+                    <span class="numero_question"> 2/15</span>
+            
+                    <div class="question">
+                        <div class="Batgame_4">
+                            <img src="./Assets/Assets/Illustrations_game/Batgame_4.png" alt="">
+                        </div>
+                        <div class="question-block">
+                            <h4>Quelle est l’ancienne profession de Harley Quinn ?</h4>
+                    
+                            <div>
+                                <input type="radio" id="Infirmière" name="q2" value="a" checked>
+                                <label for="Infirmière"> Infirmière</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Psychiatre" name="q2" value="b" >
+                                <label for="Psychiatre">Psychiatre</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Dentiste" name="q2" value="c">
+                                <label for="Dentiste">Dentiste</label>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            
+            
+                 <div id="question3">
+                    <span class="numero_question"> 3/15</span>
+            
+                    <div class="question">
+                        <div class="batgame_5">
+                            <img src="./Assets/Assets/Illustrations_game/Batgame_5.png" alt="">
+            
+                        </div>
+                        <div class="question-block">
+                            <h4>Quel est l’objet fétiche de Double Face ? </h4>
+                    
+                            <div>
+                                <input type="radio" id="Unepièce" name="q3" value="a" checked>
+                                <label for="Unepièce">Une pièce</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Unlivre" name="q3" value="b" >
+                                <label for="Unlivre">Un livre</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Uncouteau" name="q3" value="c">
+                                <label for="Uncouteau">Un couteau</label>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            
+                 <div id="question4">
+                    <span class="numero_question"> 4/15</span>
+            
+                    <div class="question">
+                        <div class="batgame_5">
+                            <img src="./Assets/Assets/Illustrations_game/Batgame_6.png" alt="">
+            
+                        </div>
+                        <div class="question-block">
+                            <h4>Qui a produit Batman en 1964 ?</h4>
+                    
+                            <div>
+                                <input type="radio" id="StanleyKubrick" name="q4" value="a" checked>
+                                <label for="StanleyKubrick">Stanley Kubrick</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="AndyWarhol" name="q4" value="b" >
+                                <label for="AndyWarhol">Andy Warhol</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="PeterJackson" name="q4" value="c">
+                                <label for="PeterJackson">Peter Jackson</label>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            
+                 <div id="question5">
+                    <span class="numero_question"> 5/15</span>
+            
+                    <div class="question">
+                        <div class="batgame_6">
+                            <img src="./Assets/Assets/Illustrations_game/Batgame_7.png" alt="">
+            
+                        </div>
+                        <div class="question-block">
+                            <h4>Batman c’est aussi le nom d’une ville en...</h4>
+                    
+                            <div>
+                                <input type="radio" id="Turquie" name="q5" value="a" checked>
+                                <label for="Turquie">Turquie</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Islande" name="q5" value="b" >
+                                <label for="Islande">Islande</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Allemagne" name="q5" value="c">
+                                <label for="Allemagne">Allemagne</label>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            
+                 <div id="question6">
+                    <span class="numero_question"> 6/15</span>
+            
+                    <div class="question">
+                        <div class="">
+                            <img src="./Assets/Assets/Illustrations_game/Batgame_8.png" alt="">
+                        </div>
+                        <div class="question-block">
+                            <h4>Quel vilain apparaît pour la première fois dans le Batman
+                                232 ?</h4>
+                
+                            <div>
+                                <input type="radio" id="LePingouin" name="q6" value="a" checked>
+                                <label for="LePingouin">Le Pingouin</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Ra’salGhul" name="q6" value="b" >
+                                <label for="Ra’salGhul">Ra’s al Ghul</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="PoisonIvy" name="q6" value="c">
+                                <label for="PoisonIvy">Poison Ivy</label>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="Batgame_9-1" src="./Assets/Assets/Illustrations_game/Batgame_9-1.png" alt="">
+                    <div class="suivantBatgame_9">
+                      <img class="Batgame_9" src="./Assets/Assets/Illustrations_game/Batgame_9.png" alt="">
+                   </div>
+                 </div>
+            
+                 <div id="question7">
+                    <span class="numero_question"> 7/15</span>
+            
+                    <div class="question">
+                        <div>
+                            <img src="./Assets/Assets/Illustrations_game/Batgame_10.png" alt="">
+                        </div>
+                        <div class="question-block">
+                            <h4>Quelle ville Batman défend-il ?</h4>
+                
+                            <div>
+                                <input type="radio" id="GothamCity" name="q7" value="a" checked>
+                                <label for="GothamCity"> Gotham City</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="StarlingCity" name="q7" value="b" >
+                                <label for="StarlingCity">Starling City</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Hell’sKitchen" name="q7" value="c">
+                                <label for="Hell’sKitchen">Hell’s Kitchen</label>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            
+                 <div id="question8">
+                    <span class="numero_question"> 8/15</span>
+            
+                    <div class="question">
+                        <div class="batgame_11">
+                            <img src="./Assets/Assets/Illustrations_game/Batgame_11.png" alt="">
+                        </div>
+                        <div class="question-block">
+                            <h4>Tim Burton a réalisé deux Batman, qui jouait Batman ? </h4>
+                
+                            <div>
+                                <input type="radio" id="GeorgesClooney" name="q8" value="a" checked>
+                                <label for="GeorgesClooney">Georges Clooney</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="ValKilmer" name="q8" value="b" >
+                                <label for="ValKilmer">Val Kilmer</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="MickaelKeaton" name="q8" value="c">
+                                <label for="MickaelKeaton">Mickael Keaton</label>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            
+                 <div id="question9">
+                    <span class="numero_question"> 9/15</span>
+            
+                    <div class="question">
+                        <div class="batgame_12">
+                            <img src="./Assets/Assets/Illustrations_game/Batgame_12.png" alt="">
+            
+                        </div>
+                        <div class="question-block">
+                            <h4>Dans son premier Batman (1989) Jack Nicholson jouait :</h4>
+                
+                            <div>
+                                <input type="radio" id="LePingouin" name="q9" value="a" checked>
+                                <label for="LePingouin">Le Pingouin</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="L’HommeMystère" name="q9" value="b" >
+                                <label for="L’HommeMystère">L’Homme Mystère</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="LeJoker" name="q9" value="c">
+                                <label for="LeJoker">Le Joker</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="suivantBatgame_13_1_13">
+                        <img src="./Assets/Assets/Illustrations_game/Batgame_13-1.png" alt="">
+                      <img src="./Assets/Assets/Illustrations_game/Batgame_13.png" alt="">
+                    </div>
+                 </div>
+            
+                 <div id="question10">
+                    <span class="numero_question"> 10/15</span>
+            
+                    <div class="question">
+                        <div>
+                            <img src="./Assets/Assets/Illustrations_game/Batgame_14.png" alt="">
+                        </div>
+                        <div class="question-block">
+                            <h4>Qui est Jonathan Crane ?</h4>
+                
+                            <div>
+                                <input type="radio" id="L’Épouvantail" name="q10" value="a" checked>
+                                <label for="L’Épouvantail">L’Épouvantail</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="LeJoker" name="q10" value="b" >
+                                <label for="LeJoker">Le Joker</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="HugoStrange" name="q10" value="c">
+                                <label for="HugoStrange">Hugo Strange</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="suivantBatgame_16">
+                    <img src="./Assets/Assets/Illustrations_game/Batgame_16.png" alt="">
+                    </div>
+                 </div>
+            
+                 <div id="question11">
+                    <span class="numero_question"> 11/15</span>
+            
+                    <div class="question">
+                        <div class="batgame_15">
+                         <img src="./Assets/Assets/Illustrations_game/Batgame_17.png" alt="">
+                        </div>
+                        <div class="question-block">
+                            <h4>Qui est l’interprète de Catwoman dans le nouveau <br>
+                                Batman de Matt Reeves (2022) ?</h4>
+                
+                            <div>
+                                <input type="radio" id="EmmaWatson" name="q11" value="a" checked>
+                                <label for="EmmaWatson">Emma Watson</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="GigiHadid" name="q11" value="b" >
+                                <label for="GigiHadid">Gigi Hadid</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="LolaIolaniMomoa" name="q11" value="c">
+                                <label for="LolaIolaniMomoa">Lola Iolani Momoa</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="ZoëKravitz" name="q11" value="d" >
+                                <label for="ZoëKravitz">Zoë Kravitz</label>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            
+                 <div id="question12">
+                    <span class="numero_question"> 12/15</span>
+            
+                    <div class="question">
+                        <div class="batgame_18">
+                            <img src="./Assets/Assets/Illustrations_game/Batgame_18.png" alt="">
+                        </div>
+                        <div class="question-block">
+                            <h4>Quel est le prénom des parents du jeune Bruce Wayne ?</h4>
+                
+                            <div>
+                                <input type="radio" id="ThomasetMartha" name="q12" value="a" checked>
+                                <label for="ThomasetMartha"> Thomas et Martha</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="ElaineetGeorges" name="q12" value="b" >
+                                <label for="ElaineetGeorges">Elaine et Georges</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="MarthaetJames" name="q12" value="c">
+                                <label for="MarthaetJames">Martha et James</label>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            
+                 <div id="question13">
+                    <span class="numero_question"> 13/15</span>
+            
+                    <div class="question">
+                        <div class="batgame_19">
+                          <img src="./Assets/Assets/Illustrations_game/Batgame_19.png" alt="" width="250px">
+                        </div>
+                        <div class="question-block">
+                            <h4>Qui interprète le Joker en 2008 ? </h4>
+                
+                            <div>
+                                <input type="radio" id="HeathLegder" name="q13" value="a" checked>
+                                <label for="HeathLegder">Heath Legder</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="HaethLedger" name="q13" value="b" >
+                                <label for="HaethLedger">Haeth Ledger</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="HeathLedger" name="q13" value="c">
+                                <label for="HeathLedger">Heath Ledger</label>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            
+                 <div id="question14">
+                    <span class="numero_question"> 14/15</span>
+                    
+                    <div class="question">
+                        <div class="batgame_20">
+                         <img src="./Assets/Assets/Illustrations_game/Batgame_20.png" alt="">
+                        </div>
+                        <div class="question-block">
+                            <h4>En quelle année Robin fait il sa première apparition ?</h4>
+                
+                            <div>
+                                <input type="radio" id="date1" name="q14" value="a" checked>
+                                <label for="date1">1940</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="date2" name="q14" value="b" >
+                                <label for="date2">1939</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="date3" name="q14" value="c">
+                                <label for="date3">1941</label>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            
+                 <div id="question15">
+                    <span class="numero_question"> 15/15</span>
+            
+                    <div class="question">
+                        <div class="batgame_21">
+                           <img src="./Assets/Assets/Illustrations_game/Batgame_21.png" alt="">
+                        </div>
+                        <div class="question-block">
+                            <h4>Qui est la fille de Batman et Catwoman (Earth - 2) ?</h4>
+                
+                            <div>
+                                <input type="radio" id="Oracle" name="q15" value="a" checked>
+                                <label for="Oracle">Oracle</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Huntress" name="q15" value="b" >
+                                <label for="Huntress">Huntress</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="BlackCanary" name="q15" value="c">
+                                <label for="BlackCanary">Black Canary</label>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 
+                 <button type="submit"> valider vos choix</button>
+
+               </form>
+               <div class="resultats">
+                <h2>cliquez sur valider pour voir les résultats</h2>
+                <p class="aide"></p>
+                <p class="note"></p>
+            </div>
+
+            </div>
+
+            <footer>
+                <div class="container">
+                     <div class="texte-footer">
+                        <img src="Assets/Assets/Logos/icon_WB.png" alt="">
+                        Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan &
+                            Snyder & Reeves
+                     </div>
+                     <div class="social-footer">
+                     <a href="#" class="social-item">
+                        <img src="Assets/Assets/Logos/logo_sayna_white.png" alt="">
+                        <img src="Assets/Assets/Logos/icon_x.png" alt=""></a>
+                        <img src="Assets/Assets/Logos/icon_DC.png" alt="">
+                    </a>
+                     <a href="#" class="social-item"><img src="Assets/Assets/Logos/icon_facebook.png" alt=""></a>
+                     <a href="#" class="social-item"><img src="Assets/Assets/Logos/icon_tw.png" alt=""></a>
+                     <a href="#" class="social-item"><img src="Assets/Assets/Logos/icon_ig.png" alt=""></a>
+            
+                     </div>
+                </div>
+            </footer>
+            <script src="./Assets/js/game.js"></script>
+
+        </body>
+        </html>
+    
+
+
+
+
+
+    
